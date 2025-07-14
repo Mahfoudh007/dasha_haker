@@ -1,97 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Юрист Маленков Дмитрий Сергеевич</title>
-  <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Юрист Маленков Дмитрий Сергеевич</title>
+    <link rel="stylesheet" href="./style.css" />
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
 
-  <!-- google fonts  -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-icon">
+        <img
+          src="./account_balance_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+          alt=""
+        />
+        <h1>Юрист Маленков Дмитрий Сергеевич</h1>
+      </div>
 
-<header>
-    <div class="header-icon">
-        <img src="./account_balance_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-        <h1>Юрист Маленков Дмитрий Сергеевич</h1>        
+      <div class="contact-info">
+        <p>моб +7 925 172 38 36</p>
+        <p>e-mail: malenkov_1@mail.ru</p>
+      </div>
+    </header>
+
+    <section class="head-banner">
+      <h4>Ждем вас в нашем офисе</h4>
+      <button onclick="openPromp()">онлайн консультация</button>
+    </section>
+
+    <section class="about-me">
+      <h1>Обо мне</h1>
+      <div class="about-cards">
+        <div class="card">
+          <p>10 лет юридической практики</p>
+        </div>
+        <div class="card">
+          <p>
+            Образование специалитет Финансового университета при правительстве
+            РФ
+          </p>
+        </div>
+      </div>
+      <div
+        style="
+          max-width: 800px;
+          margin: auto;
+          text-align: center;
+          font-family: sans-serif;
+        "
+      >
+        <h2 style="margin-bottom: 20px"></h2>
+        <div
+          style="
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+          "
+        >
+          <img
+            id="gallery-image"
+            src="./imges/ab1.jpg"
+            alt="Фото"
+            style="width: 100%; height: 600px; transition: opacity 0.5s"
+          />
+          <button
+            onclick="prevImage()"
+            style="
+              position: absolute;
+              top: 50%;
+              left: 10px;
+              transform: translateY(-50%);
+              background-color: rgba(0, 0, 0, 0.5);
+              color: white;
+              border: none;
+              padding: 10px;
+              border-radius: 50%;
+              cursor: pointer;
+            "
+          >
+            &#8592;
+          </button>
+          <button
+            onclick="nextImage()"
+            style="
+              position: absolute;
+              top: 50%;
+              right: 10px;
+              transform: translateY(-50%);
+              background-color: rgba(0, 0, 0, 0.5);
+              color: white;
+              border: none;
+              padding: 10px;
+              border-radius: 50%;
+              cursor: pointer;
+            "
+          >
+            &#8594;
+          </button>
+        </div>
+        <p id="image-counter" style="margin-top: 10px; color: #555">1 / 9</p>
+      </div>
+    </section>
+    <section class="services">
+      <div class="service-title">Направления деятельности</div>
+
+      <div class="service">
+        <img src="./imges/gavel.svg" alt="" /> Представительство в арбитражный
+        судах и судах общей юрисдикции
+      </div>
+      <div class="service">
+        <img src="./imges/diversity.svg" alt="" /> Сопровождение корпоративной
+        деятельности компаний и разрешение корпоративных споров
+      </div>
+      <div class="service">
+        <img src="./imges/article_shortcut.svg" alt="" /> Правовая экспертиза
+        договоров и анализ потенциальных рисков
+      </div>
+      <div class="service">
+        <img src="./imges/credit_card_off.svg" alt="" /> Банкротство физических
+        и юридических лиц
+      </div>
+      <div class="service">
+        <img src="./imges/adaptive_audio.svg" alt="" /> Семейные споры, раздел
+        совместно нажитого имущества
+      </div>
+      <div class="service">
+        <img src="./imges/cheer.svg" alt="" /> Оспаривание сделок
+      </div>
+      <div class="service">
+        <img src="./imges/currency_ruble.svg" alt="" /> Взыскание задолженности
+      </div>
+      <div class="service">
+        <img src="./imges/man.svg" alt="" /> Представление интересов при
+        исполнительном производстве
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="contact-title">Контактная информация</div>
+      <div class="contact-details">
+        <p><span>📍</span> Офис: Москва, Кутузовский проспект, 24</p>
+        <p><span>📞</span> +7 925 172 38 36</p>
+        <p><span>📧</span> e-mail: malenkov_1@mail.ru</p>
+      </div>
+      <div class="map-yandex">
+        <script
+          type="text/javascript"
+          charset="utf-8"
+          async
+          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af3a8bdbc5d91d8efa11f88e2bb52794845e634c26145ce75e40ba7d3ce08a77b&amp;width=500&amp;height=304&amp;lang=en_FR&amp;scroll=true"
+        ></script>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Маленков Дмитрий Сергеевич. Все права защищены.</p>
+      <p>Разработано Дашка-хакер</p>
+    </footer>
+
+    <!-- promp  -->
+
+    <div id="promp" class="promp-container">
+      <div id="btnClosePromp" class="close-promp">X</div>
+      <form action="#">
+        <div class="input-card">
+          <label for="name">Имя:</label>
+          <input type="text" id="name" name="name" />
+        </div>
+        <div class="input-card">
+          <label for="mobile">Номер телефона:</label>
+          <input type="text" id="mobile" name="mobile" />
+        </div>
+        <button  type="submit">Отправить</button>
+      </form>
     </div>
 
-  <div class="contact-info">
-    <p>моб +7 925 172 38 36</p>
-    <p>e-mail: malenkov_1@mail.ru </p>
-  </div>
-</header>
-
-<section class="head-banner">
-  <h4>ждем вас в нашем офисе</h4>
-  <button>онлайн консультация</button>
-</section>
-
-<section class="about-me">
-  <h1>Обо мне</h1>
-  <div class="about-cards">
-    <div class="card">
-      
-      <p>10 лет юридической практики</p>
-    </div>
-    <div class="card">
-      
-      <p>Образование специалитет Финансового университета при правительстве РФ</p>
-    </div>
-  </div>
-  <div style="max-width: 800px; margin: auto; text-align: center; font-family: sans-serif;">
-  <h2 style="margin-bottom: 20px;"></h2>
-  <div style="position: relative; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
-    <img id="gallery-image" src="./imges/ab1.jpg" alt="Фото" style="width: 100%; height: 600px; transition: opacity 0.5s;">
-    <button onclick="prevImage()" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 10px; border-radius: 50%; cursor: pointer;">&#8592;</button>
-    <button onclick="nextImage()" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 10px; border-radius: 50%; cursor: pointer;">&#8594;</button>
-  </div>
-  <p id="image-counter" style="margin-top: 10px; color: #555;">1 / 9</p>
-</div>
-</section>
-<section class="services">
-  <div class="service-title">Направления деятельности</div>
-
-  <div class="service"><img src="./imges/gavel.svg" alt="">
-    Представительство в арбитражный судах и судах общей юрисдикции</div>
-  <div class="service"><img src="./imges/diversity.svg" alt="">
-    Сопровождение корпоративной деятельности компаний и разрешение корпоративных споров</div>
-  <div class="service"><img src="./imges/article_shortcut.svg" alt="">
-    Правовая экспертиза договоров и анализ потенциальных рисков</div>
-  <div class="service"><img src="./imges/credit_card_off.svg" alt="">
-    Банкротство физических и юридических лиц</div>
-  <div class="service"><img src="./imges/adaptive_audio.svg" alt="">
-    Семейные споры, раздел совместно нажитого имущества</div>
-  <div class="service"><img src="./imges/cheer.svg" alt="">
-    Оспаривание сделок</div>
-  <div class="service"><img src="./imges/currency_ruble.svg" alt="">
-    Взыскание задолженности</div>
-  <div class="service"><img src="./imges/man.svg" alt="">
-    Представление интересов при исполнительном производстве</div>
-</section>
-
-
-<section class="contact">
-  <div class="contact-title">Контактная информация</div>
-  <div class="contact-details">
-    <p><span>📍</span> Офис: Москва, Кутузовский проспект, 24</p>
-    <p><span>📞</span> +7 925 172 38 36</p>
-    <p><span>📧</span> e-mail: malenkov_1@mail.ru</p>
-  </div>
-</section>
-
-
-<footer><p>&copy; 2025 Маленков Дмитрий Сергеевич. Все права защищены.</p>
-    <p>Разработано Дашка-хакер</p>
-</footer>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-<script src="./main.js"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
 </html>

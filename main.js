@@ -29,4 +29,17 @@ const images = [
   function nextImage() {
     current = (current + 1) % images.length;
     updateImage();
-  }
+}
+  
+// promp form
+
+const promp = document.getElementById("promp");
+const btnClosePromp = document.getElementById('btnClosePromp')
+
+function openPromp() {
+  promp.style.display = 'block';
+}
+
+btnClosePromp.onclick = () => {
+  promp.style.display = 'none';
+}
