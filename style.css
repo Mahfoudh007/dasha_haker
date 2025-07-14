@@ -309,7 +309,6 @@ header img {
 }
 
 .map-yandex {
-  /* width: 10px; */
   overflow: hidden;
 }
 
@@ -354,5 +353,11 @@ header img {
   padding: 5px 10px;
   border: none;
   border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+ .promp-container {
+    width: 300px;
+ }
 }
 /* promp  */
