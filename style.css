@@ -11,6 +11,7 @@
 }
 
 body {
+  box-sizing: border-box;
   position: relative;
   margin: 0;
   padding: 0;
@@ -53,6 +54,10 @@ header p {
 header .contact-info {
   color: #f5f5f5;
   border: #333 solid 1px;
+}
+
+header .contact-info a {
+  color: white;
 }
 
 header img {
@@ -301,6 +306,11 @@ header img {
 
 .contact-details span {
   font-size: 22px;
+}
+
+.map-yandex {
+  /* width: 10px; */
+  overflow: hidden;
 }
 
 /* contact */
