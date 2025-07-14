@@ -53,7 +53,7 @@ header p {
 
 header .contact-info {
   color: #f5f5f5;
-  border: #333 solid 1px;
+  /* border: #333 solid 1px; */
 }
 
 header .contact-info a {
